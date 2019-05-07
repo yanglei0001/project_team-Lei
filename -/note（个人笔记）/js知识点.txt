@@ -1,0 +1,76 @@
+js是什么
+
+是一门脚本语言、
+是一门解释性语言、
+是一门动态类型语言、
+是一门基于对象语言、
+
+
+
+js分为三个部分
+
+1.ECMAScript 标准 - js的基本语法
+2.DOM - Document Object Model  文档对象模型
+3.BOM - Browser object model 浏览器对象模型
+
+
+
+js作用
+ 
+解决用户和浏览器之间的交互问题
+
+
+
+js可以做什么
+
+网页特效
+服务端开发
+命令行工具
+桌面程序
+控制硬件 物联网
+游戏开发
+app
+
+
+
+js可以写的三个地方
+
+在html的文件中的script的标签中写js代码
+在html的标签中写
+在js文件中写代码 但是需要在html的页面中引入script的标签中的src中
+
+
+
+
+js代码需要注意的问题
+
+1.在一对script的标签中有错误的js代码，那错误的代码后面的代码不会执行
+2.如果第一对script标签中的js出现错误，不会影响后面的 script 标签中的js代码
+3.script的标签中可以写什么内容 type="text/javascript"是标签中的标准写法
+ Language="Javascript"都可以目前在我们html页面中，type和Language都可以省略。
+html是遵循h5的标准
+4.可能会出现  script标签中可能同时出现type和Language的写法
+5.如果script标签是引入外部js文件的作用，那么这对标签中不要写任何js代码，
+如果要写，可以重新写一对script标签，在里面写代码
+6.script标签一般是放在body的标签的最后的，有的时候会在head标签中，
+目前讲课的时候都在body标签中的后面。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

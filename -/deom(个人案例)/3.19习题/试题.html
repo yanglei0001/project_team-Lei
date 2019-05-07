@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .del {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // 第一题
+        // var res = 0;
+        // function count(m) {
+        //     for (var i = 1; i <= m; i++) {
+        //         res += i
+        //     }
+        //     return res;
+        // }
+        // var result = count(5);
+        // console.log(result);
+
+            // 第二题
+        // function count(m,s,n){
+        //     switch(s){
+        //         case "+": return m + n; break;
+        //         case "-": return m - n; break;
+        //         case "*": return m * n; break;
+        //         case "/": return m / n; break;
+        //     }
+        // }
+        // var result = count(5,"+",6);
+        // console.log(result);  
+        // var result = count(5,"*",6);
+        // console.log(result);  
+
+            // 第三题
+        // var res=0;    
+        // function count(m){
+        //     for(var i=1;i<=m;i++){
+        //         if(i%2==1){
+        //             res+=i
+        //             console.log(i)
+        //         }  
+        //         }
+        //         return res;
+        //     }
+        // var result = count(10);
+        // console.log(result); 
+    </script>
+
+
+
+
+    <!-- 第四题 -->
+    
+    <img src="1.png" alt="" class="img1">
+    <br>
+    <button class="q1">1</button>
+    <button class="q2">2</button>
+    <button class="q3">3</button>
+    <button class="q4">4</button>
+    <script>
+        // 想要切换的图片
+    var img=document.querySelector(".img1");
+
+    var btn=document.querySelector(".q1");
+    btn.onclick = function(){
+        img.src= "1.png";
+    }  
+    var btn=document.querySelector(".q2");
+    btn.onclick = function(){
+        img.src= "2.png";
+    }   
+    var btn=document.querySelector(".q3");
+    btn.onclick = function(){
+        img.src= "3.png";
+    }   
+    var btn=document.querySelector(".q4");
+    btn.onclick = function(){
+        img.src= "4.png";
+    }    
+    </script>
+
+
+    <!-- 第五题 -->
+
+    <!-- 
+            <input type="text" placeholder="添加水果的名字">
+            <button>添加</button>
+            <br>
+            <ul>
+                <li><span>香蕉</span>   <span class="del">删除</span></li>
+                <li><span>苹果</span>   <span class="del">删除</span></li>
+                <li><span>鸭梨</span>  <span class="del">删除</span></li>
+            </ul>
+               
+            <script>
+             var input = document.querySelector("input");
+                var btn = document.querySelector("button");
+                var ul= document.querySelector("ul")
+                btn.onclick = function(){
+                    var text = input.value;
+                    var li = document.createElement("li"); 
+                    li.innerHTML = text;
+                    ul.appendChild(li);
+                }
+            var aDel = document.querySelectorAll(".del");
+            for(var i = 0;i<aDel.length;i++){
+            aDel[i].onclick = function(){
+            var parent = this.parentNode
+            parent.parentNode.removeChild(parent)
+    }
+}
+            </script> -->
+            <!-- 5 -->
+            <input type="text" class="text">
+            <button class="btn">添加</button>
+            <ul class="list">
+                <li>香蕉 <span class="del">删除</span></li>
+                <li>苹果 <span class="del">删除</span></li>
+                <li>草莓 <span class="del">删除</span></li>
+            </ul>
+             <script src="jquery.js"></script>
+             <script>
+             $(".btn").click=function(){
+                 var text=$(".text").val();
+                 var $li = $("<li>");
+                 $li.append(text);
+                 var $del = $("<span class='del'>删除</span>");
+                 $li.append($del)
+                 $(".list").append($li);
+             }
+             $(".list").delegate(".del","click",function(){
+                 $(this).parent().remove();
+             })
+             
+             
+             </script>
+
+</body>
+
+</html>
